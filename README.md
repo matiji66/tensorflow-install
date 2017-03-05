@@ -1,5 +1,5 @@
 # tensorflow-install
-
+# 具体使用请参考文档： tensorflow install on win7 64.docx
 环境是win7 64
 Conda --version Anaconda 64 4.3.13
 
