@@ -4,10 +4,19 @@
 Conda --version Anaconda 64 4.3.13
 
 1.新建一个python 3.5 版本
-
 conda create -n tensorflow python=3.5
+
 2. Activate tensorflow
-3. pip install tensorflow
+
+3. pip install tensorflow (默认是没有安装最新版本的)
+Both distributions include pip. To install the CPU-only version of TensorFlow, enter the following command at a command prompt:
+
+pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0rc1-cp35-cp35m-win_amd64.whl
+
+To install the GPU version of TensorFlow, enter the following command at a command prompt:
+pip install --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-0.12.0rc1-cp35-cp35m-win_amd64.whl
+
+
 4. 如何进入Python 命令行，使用tf呢
 4.1 activate tensorflow
 4.2 python 
@@ -25,7 +34,8 @@ conda create -n tensorflow python=3.5
 
 选中之后就能使用python的3.5 的环境以及tensorflow的开发测试.
 
-　　可见不论是在 python shell中还是在其他的python IDE 中都是很容易的进行python的版本切换。
+总结:
+　  可见不论是在python shell中还是在其他的python IDE中都是很容易的进行python的版本切换。
 　　这比使用docker安装方便多了，关键是搞了半天，docker-tool安装好了，但是dock的tensorflow镜像下载不下了。
 　　
-　　补充说明的是python以及python package的安装过程中使用国内的镜像比较快。
+##补充说明的是python以及python package的安装过程中使用国内的镜像比较快。
